@@ -16,9 +16,11 @@ struct _finddata_t
 ```
 其中文件属性 `attrib` 是无符号整型，取值为为相应的宏：`_A_SUBDIR` 文件夹，`_A_HIDDEN` 隐藏，`_A_SYSTEM` 系统，`_A_NORMAL` 正常，`_A_RDONLY` 只读。
 
+```
 `_findfirst` 根据命名规则匹配当前目录的第一个文件，返回的是匹配的文件的句柄，数据类型为`long`。
 `_findnext` 根据命名规则匹配到当前目录的下一个文件。
 `_findclose` 关闭句柄。
+```
 
 下面是搜索当前目录的所有文件。
 ```cpp
